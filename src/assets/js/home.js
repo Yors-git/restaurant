@@ -19,6 +19,7 @@ const home = (img) => {
   text.style.color = 'white';
   text.style.margin = '6rem 2rem';
   text.style.textShadow = '-2px 1px black';
+  text.style.fontWeight = '800';
 
   text.innerHTML = "COME TRY OUR WONDERFUL TACOS, YOU WON'T REGRET IT, WE PROMISE!!!";
   imageDiv.appendChild(text);

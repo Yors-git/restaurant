@@ -12,6 +12,10 @@ const background = () => {
   document.body.style.backgroundRepeat = 'repeat';
 }
 
+const selectRender = () => {
+  
+}
+
 document.addEventListener('DOMContentLoaded', () => { 
   background()
   navBar()
