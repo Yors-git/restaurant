@@ -18,7 +18,7 @@ const navBar = () => {
   navContainer.classList.add('container-fluid');
   navBrand.classList.add('navbar-brand');
   navBrand.href = '#';
-  navBrand.text = 'Home';
+  navBrand.text = 'Grand Taco';
   togglerButton.classList.add('navbar-toggler');
   togglerButton.type = 'button';
   togglerButton.setAttribute('data-bs-toggle', 'collapse');
@@ -39,11 +39,11 @@ const navBar = () => {
   navLinkMenu.classList.add('nav-link');
   navLinkInfo.classList.add('nav-link');
 
-  navLinkHome.text = 'Home';
+  navLinkHome.text = 'HOME';
   navLinkHome.href = '#';
-  navLinkMenu.text = 'Menu';
+  navLinkMenu.text = 'MENU';
   navLinkMenu.href = '#';
-  navLinkInfo.text = 'Info';
+  navLinkInfo.text = 'LOCATION';
   navLinkInfo.href = '#';
 
   navItemHome.appendChild(navLinkHome);
