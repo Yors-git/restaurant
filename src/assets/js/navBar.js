@@ -27,7 +27,7 @@ const navBar = () => {
   togglerButton.setAttribute('aria-expanded', 'false');
   togglerButton.setAttribute('aria-label', 'Toggle navigation');
   togglerButtonSpan.classList.add('navbar-toggler-icon');
-  collapseDiv.classList.add('collapse', 'navbar-collapse');
+  collapseDiv.classList.add('collapse', 'navbar-collapse', 'justify-content-end');
   collapseDiv.setAttribute('id', 'navbarNav');
   navNav.classList.add('navbar-nav');
 

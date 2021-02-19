@@ -1,4 +1,4 @@
-const home = (img) => {
+const info = (img) => {
   const content = document.getElementById('content');
   const container = document.createElement('div');
   const mainHome = document.createElement('div');
@@ -18,17 +18,17 @@ const home = (img) => {
   imageDiv.style.padding = '0 5% 34% 5%';
   imageDiv.style.display = 'flex';
   imageDiv.style.justifyContent = 'center';
-  text.style.color = 'white';
-  text.style.margin = '6rem 2rem';
-  text.style.textShadow = '-2px 1px black';
-  text.style.fontWeight = '800';
-  text.style.fontSize = '1.7rem';
+  text.style.color = 'black';
+  text.style.margin = '18rem -1rem 0 -1rem';
+  text.style.fontWeight = '500';
+  text.style.padding = '20px';
+  text.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+  text.innerHTML = 'You can find us at: San Agustin 100, Paseos de Echegaray, ZIP 11000, Phone: 5554389211'
 
-  text.innerHTML = "COME TRY OUR WONDERFUL TACOS, YOU WON'T REGRET IT!!!";
   imageDiv.appendChild(text);
   mainHome.appendChild(imageDiv);
   container.appendChild(mainHome);
   content.appendChild(container);
 }
 
-export default home;
+export default info;

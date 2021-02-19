@@ -8,8 +8,10 @@ import menuImg1 from './assets/images/menuBeefTaco.jpg';
 import menuImg2 from './assets/images/menuPastor.jpg';
 import menuImg3 from './assets/images/menuQueso.jpg';
 import menuImg4 from './assets/images/menuVeg.jpg';
+import locmap from './assets/images/locMap.png';
 import home from './assets/js/home';
 import menu from './assets/js/menu';
+import info from './assets/js/info';
 
 const menuImgArr = [menuImg1, menuImg2, menuImg3, menuImg4];
 const menuTitleArr = ['The Best Beef Tacos', 'Delicious Pastor Tacos', 'Great Quesadillas', 'Vegetarian Tacos']
@@ -36,9 +38,13 @@ const selectRender = (key) => {
       content.remove();
       menu(menuImgArr, menuTitleArr, menuTextArr);
       break;
+    case 'info':
+      content.remove();
+      info(locmap);
+      break;
   
     default:
-      home(mainHomeImage, false);
+      home(mainHomeImage);
       break;
   }
 }
@@ -49,7 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
   home(mainHomeImage)
   const homeTab = document.getElementById('home');
   const menuTab = document.getElementById('menu');
+  const infoTab = document.getElementById('info');
 
   homeTab.addEventListener('click', () => {selectRender('home')})
   menuTab.addEventListener('click', () => {selectRender('menu')})
+  infoTab.addEventListener('click', () => {selectRender('info')})
 })
