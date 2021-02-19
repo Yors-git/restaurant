@@ -1,6 +1,6 @@
 # JavaScript Project - Restaurant Page 
 
->  In this project I built a small JS app for a restaurant, it uses webpack to bundle all modules, and has tab switching logic to manage the 3 tabs that dislay different information.
+>  In this project I built a small JS app for a restaurant, it uses webpack to bundle all modules, and has tab switching logic to manage the 3 tabs that display different information.
 ## Screenshot
 
 ![img](./src/assets/images/Screenshot.png)
