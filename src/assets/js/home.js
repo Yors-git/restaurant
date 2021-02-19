@@ -4,11 +4,11 @@ const home = (img) => {
   const mainHome = document.createElement('div');
   const imageDiv = document.createElement('div');
   const text = document.createElement('p');
-  container.classList.add('container')
-  const mainHomeClasses = ['row', 'justify-content-center', 'py-5', 'px-2', 'my-5']
+  container.classList.add('container');
+  const mainHomeClasses = ['row', 'justify-content-center', 'py-5', 'px-2', 'my-5'];
   mainHome.classList.add(...mainHomeClasses);
 
-  container.setAttribute('id', 'container')
+  container.setAttribute('id', 'container');
 
   imageDiv.style.maxWidth = '28rem';
   imageDiv.style.backgroundImage = `url(${img})`;
@@ -29,6 +29,6 @@ const home = (img) => {
   mainHome.appendChild(imageDiv);
   container.appendChild(mainHome);
   content.appendChild(container);
-}
+};
 
 export default home;

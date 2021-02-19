@@ -4,10 +4,10 @@ const menu = (imgArr, titleArr, textArr) => {
   container.classList.add('container', 'py-5');
   container.setAttribute('id', 'container');
   const row = document.createElement('div');
-  const rowClasses = ['row', 'row-cols-1', 'row-cols-md-2', 'g-4']
+  const rowClasses = ['row', 'row-cols-1', 'row-cols-md-2', 'g-4'];
   row.classList.add(...rowClasses);
 
-  for(let i = 0; i < imgArr.length; i++){
+  for (let i = 0; i < imgArr.length; i += 1) {
     const colDiv = document.createElement('div');
     colDiv.classList.add('col');
     const card = document.createElement('div');
@@ -21,7 +21,7 @@ const menu = (imgArr, titleArr, textArr) => {
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
     const cardTitle = document.createElement('h5');
-    cardTitle.classList.add('card-title')
+    cardTitle.classList.add('card-title');
     cardTitle.innerHTML = titleArr[i];
     cardBody.appendChild(cardTitle);
     const cardText = document.createElement('p');
@@ -35,6 +35,6 @@ const menu = (imgArr, titleArr, textArr) => {
   }
   container.appendChild(row);
   content.appendChild(container);
-}
+};
 
 export default menu;

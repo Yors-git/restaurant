@@ -3,8 +3,8 @@ const navBar = () => {
   const nav = document.createElement('nav');
   const navContainer = document.createElement('div');
   const navBrand = document.createElement('a');
-  const togglerButton = document.createElement('button')
-  const togglerButtonSpan = document.createElement('span')
+  const togglerButton = document.createElement('button');
+  const togglerButtonSpan = document.createElement('span');
   const collapseDiv = document.createElement('div');
   const navNav = document.createElement('ul');
   const navItemHome = document.createElement('li');
@@ -36,11 +36,11 @@ const navBar = () => {
   navItemInfo.classList.add('nav-item');
 
   navLinkHome.classList.add('nav-link');
-  navLinkHome.setAttribute('id', 'home')
+  navLinkHome.setAttribute('id', 'home');
   navLinkMenu.classList.add('nav-link');
-  navLinkMenu.setAttribute('id', 'menu')
+  navLinkMenu.setAttribute('id', 'menu');
   navLinkInfo.classList.add('nav-link');
-  navLinkInfo.setAttribute('id', 'info')
+  navLinkInfo.setAttribute('id', 'info');
 
   navLinkHome.text = 'HOME';
   navLinkHome.href = '#';
@@ -57,13 +57,13 @@ const navBar = () => {
   navNav.appendChild(navItemMenu);
   navNav.appendChild(navItemInfo);
 
-  togglerButton.appendChild(togglerButtonSpan)
+  togglerButton.appendChild(togglerButtonSpan);
   navContainer.appendChild(navBrand);
   navContainer.appendChild(togglerButton);
   collapseDiv.appendChild(navNav);
   navContainer.appendChild(collapseDiv);
   nav.appendChild(navContainer);
-  content.appendChild(nav)
-}
+  content.appendChild(nav);
+};
 
 export default navBar;
