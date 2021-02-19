@@ -13,7 +13,7 @@
 - VSCode
 
 ## Live Demo
-![Live Demo](http://torresbribiesca.tech/restaurant/)
+http://torresbribiesca.tech/restaurant/
 
 ## Author:
 
