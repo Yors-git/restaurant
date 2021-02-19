@@ -36,8 +36,11 @@ const navBar = () => {
   navItemInfo.classList.add('nav-item');
 
   navLinkHome.classList.add('nav-link');
+  navLinkHome.setAttribute('id', 'home')
   navLinkMenu.classList.add('nav-link');
+  navLinkMenu.setAttribute('id', 'menu')
   navLinkInfo.classList.add('nav-link');
+  navLinkInfo.setAttribute('id', 'info')
 
   navLinkHome.text = 'HOME';
   navLinkHome.href = '#';

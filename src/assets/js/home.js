@@ -8,6 +8,8 @@ const home = (img) => {
   const mainHomeClasses = ['row', 'justify-content-center', 'py-5', 'px-2', 'my-5']
   mainHome.classList.add(...mainHomeClasses);
 
+  container.setAttribute('id', 'container')
+
   imageDiv.style.maxWidth = '28rem';
   imageDiv.style.backgroundImage = `url(${img})`;
   imageDiv.style.backgroundSize = 'contain';
